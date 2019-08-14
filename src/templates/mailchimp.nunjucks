@@ -33,21 +33,20 @@
     <table border="0" cellpadding="0" cellspacing="0" id="template-content-body" width="100%">
 
       <tr>
-        <td align="left" valign="top" width="100%">
+        <td class="pt20" align="left" valign="top" width="100%">
           <div class="wrap-container" style="border-bottom:0">
             {% block content_first %}{% endblock %}
           </div>
         </td>
       </tr>
       <tr>
-        <td align="left" style="background: #bbedfa" valign="top" width="100%">
+        <td align="center" style="background: #bbedfa" valign="top" width="100%">
           <div class="wrap-container" style="border-top:0; border-bottom:0;">
-            <div class="euro"><img src="images/1euro.png"></div>
             {% block content_second %}{% endblock %}</td>
           </div>
       </tr>
       <tr>
-        <td align="center" valign="top" width="100%">
+        <td class="pb20" align="center" valign="top" width="100%">
           <div class="wrap-container" style="border-top:0">
             {% block content_third %}{% endblock %}</td>
           </div>
@@ -61,20 +60,7 @@
       <tr id="content-fifth">
         <td align="center" valign="top" width="100%">
           {% block content_fifth %}{% endblock %}
-        </td>
-      </tr>
-      <tr>
-        <td align="center" valign="top" width="100%"><img src="images/img_3.png"></td>
-      </tr>
-
-    </table>
-
-
-    <!-- EMAIL FOOTER -->
-    <table border="0" cellpadding="0" cellspacing="0" id="template-content-footer" width="100%">
-      <tr>
-        <td align="center" valign="top">
-
+          <div id="img-responsive"><img src="images/img_3.png"></div>
         </td>
       </tr>
     </table>
@@ -86,7 +72,7 @@
   <!-- TEMPLATE FOOTER //////////////// -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%" id="template-footer">
     <tr>
-      <td width="100%" align="center">
+      <td class="pt20" width="100%" align="center">
         <table border="0" cellpadding="0" cellspacing="0" id="socialmedia" align="center">
           <tr>
             <td><a href="#"><img src="images/ico_fb.png"></a></td>

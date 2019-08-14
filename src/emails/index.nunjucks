@@ -1,57 +1,62 @@
 {% extends "mailchimp.nunjucks" %}
 
+
 {% block preheader %}
-<strong>Your Napster subscription has expired - get 3 months for just 1 €!</strong>
-<p>If you can’t see this message<br>
-<a href="#">Click to the see the web version</a></p>
+	<strong>Your Napster subscription has expired - get 3 months for just 1 €!</strong>
+	<p>If you can’t see this message<br>
+	<a href="#">Click to the see the web version</a></p>
 {% endblock %}
 
 
-
-
 {% block email_header %}
-	<h2 class="heading">
+	<h2 class="heading-white">
 		Keep listening<br>
 		to the music<br>
 		you love,<br>
 		<strong>for just 1 €</strong>
 	</h2>
-	<a class="button" href="#">GET THE OFFER</a>
+	<a class="button-full" href="#">GET THE OFFER</a>
 {% endblock %}
 
 
 
 {% block content_first %}
-
-	<h2 class="heading">Don’t miss THE latest tracks from <strong>EDITORS</strong></h2>
-	<p>You’ve been part of the Napster family since 2018. We go way back ;)<br>
+	<h2 class="heading-dark">DON’T MISS THE LATEST TRACKS FROM <strong>EDITORS</strong></h2>
+	<p class="text-dark">You’ve been part of the Napster family since 2018. We go way back ;)<br>
 		Your subscription has just ended… But because we like having you around, here's a special offer just for you.</p>
 {% endblock %}
 
+
 {% block content_second %}
-	<ul id="features">
-		<li>Offline listening</li>
-		<li>Forever free of ads</li>
-		<li>Customizable playlists</li>
-	</ul>
+	<table id="features">
+		<tr><td><div class="euro"><img src="images/1euro.png"></div><td></tr>
+		<tr><td><img class="checkmark" src="images/ico_check.png">Offline listening</td></tr>
+		<tr><td><img class="checkmark" src="images/ico_check.png">Forever free of ads</td></tr>
+		<tr><td><img class="checkmark" src="images/ico_check.png">Customizable playlists</td></tr>
+	</table>
 {% endblock %}
+
 
 {% block content_third %}
-	<a class="button" href="#">GET THE OFFER</a>
+	<a class="button-outline" href="#">GET THE OFFER</a>
 {% endblock %}
+
 
 {% block content_fourth %}
-	<h2 class="heading">60 MILLIONS SONGS
+	<h2 class="heading-white">60 MILLIONS SONGS
 	<strong>FROM YOUR FAVOURITE ARTISTS</strong></h2>
-	<p>Unlimited songs on demand from Editors and all your favourite artists for just 1 €</p>
+	<p class="text-white">Unlimited songs on demand from Editors and all your favourite artists for just 1 €</p>
 {% endblock %}
 
+
 {% block content_fifth %}
-	<h2 class="heading">A PREMIUM OFFER
+	<h2 class="heading-dark">A PREMIUM OFFER
 	<strong>THAT FOLLOWS YOU AROUND</strong></h2>
-	<p>With Napster, bing your music wherever you go, whether you’re online or offline.
+	<p class="text-dark">With Napster, bing your music wherever you go, whether you’re online or offline.
 All your playlists and artists follow you on your smartphone, desktop and speakers.</p>
 {% endblock %}
+
+
 
 {% block email_footer %}
 	<p>

@@ -1,7 +1,5 @@
 
-@import
-	'reset'
-;
+@import 'reset';
 
 $font-stack: 'Helvetica Neue', Helvetica, 'Arial', sans-serif;
 $theme: rgb(255, 219, 58);
@@ -10,39 +8,83 @@ $bg-color: #F5F5F5;
 $brand: #1d222d;
 $paleblue: #bbedfa;
 $blue: #6fccfa;
+$pink: #ffaad2;
+$heading-size: 24px;
+$text-size: 16px;
 
-body {
-	background-color: $bg-color;
-}
+// debugging ------------–------------–------------–
+// table {
+// 	outline: 3px solid yellow;
+// }
+// tr {
+// 	outline: 2px solid blue;
+// }
+// td {
+// 	outline: 1px dotted red;
+// }
+// debugging ------------–------------–------------–
 
-a {
-	color: #000;
-}
 
+.pt20 { padding-top: 20px; }
+.pb20 { padding-bottom: 20px; }
+
+body { background-color: $bg-color; }
+a { color: $brand; }
 
 #body-container {
 	width: 100%;
-	max-width: 600px;
-	margin: 20px auto;
-
+	max-width: 500px;
+	margin: 0px auto;
+	color: $brand;
 }
 
-.button {
+[class*='button'] {
 	padding: 9px 15px;
-	background-color: $paleblue;
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-size: 16px;
 	font-weight: bold;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+	&[class*='-full'] {
+		background-color: $paleblue;
+		border-color: $paleblue;
+	}
+	&[class*='-outline'] {
+		border-color: $pink;
+	}
+
 }
 
-.heading {
+[class*='heading'] {
 	display: block;
-	font-size: 22px;
+	font-size: $heading-size;
 	font-weight: normal;
-	margin-top: 0;
+	margin: 0;
+	padding-bottom: 20px;
 	strong{
 		font-weight: bold;
+	}
+	&[class*='-white'] {
+		color: #FFF;
+	}
+	&[class*='-dark'] {
+		color: $brand;
+	}
+}
+
+[class*='text'] {
+	display: block;
+	font-size: $text-size;
+	font-weight: normal;
+	line-height: 23px;
+	margin-top: 0;
+	&[class*='-white'] {
+		color: #FFF;
+	}
+	&[class*='-dark'] {
+		color: $brand;
 	}
 }
 
@@ -50,14 +92,13 @@ a {
 	border: 5px solid $blue;
 	padding: 15px;
 }
+
+
 /* **********************
 
 	Preheader
 
  ********************** */
-
-
-
 
 #template-preheader {
 	td {
@@ -102,31 +143,68 @@ a {
 
 #template-content {
 	background-color: #fff;
-	box-shadow: 2px 2px 3px rgba(150, 150, 150, 0.2)
+	// box-shadow: 2px 2px 3px rgba(150, 150, 150, 0.2)
 }
-
-
 
 #template-content-header {
 	text-align: center;
 	position: relative;
+	background-image: url(images/header_img.jpg);
+	background-size: cover;
 	td {
-		background-image: url(images/header_img.png);
-		background-size: cover;
+		background-image: url(images/shape_1.png);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: bottom;
 		padding: 20px 15px;
 		font-family: $font-stack;
-		padding: 50px
+		padding: 50px;
+		min-height: 300px;
+	}
+}
+
+
+table#features {
+	td {
+		height: 30px;
+		img.checkmark {
+			display: inline-block;
+			float: left;
+			width: 20px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.euro {
+	border-bottom: 2px solid $blue;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	img {
+		display: block;
+		width: 200px;
+		margin: 0 auto;
 	}
 }
 
 #template-content-body {
 	text-align: center;
 	position: relative;
-	.wrap-container{
+	.wrap-container {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	td {
+	tr {
+		// &:first-child {
+		// 	td {
+		// 		padding-top: 20px;
+		// 	}
+		// }
+		// &:last-child {
+		// 	td {
+		// 		padding-bottom: 20px;
+		// 	}
+		// }
 		// background-image:  url(images/header_img.png);
 		background-size: cover;
 		padding: 20px 15px;
@@ -156,14 +234,6 @@ a {
 	}
 }
 
-.euro {
-	img {
-		display: block;
-		width: 200px;
-		margin: 0 auto;
-	}
-}
-
 
 /* */
 
@@ -179,6 +249,11 @@ a {
 
 }
 
+#content-fifth {
+	td {
+		padding: 40px;
+	}
+}
 
 /* */
 
@@ -198,6 +273,14 @@ a {
 }
 
 
+#img-responsive {
+	padding: 10px 0;
+	img {
+		max-width: 260px;
+		display: block;
+		margin: 0 auto;
+	}
+}
 
 
 /* **********************
@@ -211,10 +294,22 @@ a {
 	img {
 		width: 30px;
 	}
+
+	a {
+		display: block;
+		img { opacity: .5; }
+		// border: 1px solid red;
+		&:hover {
+			// img { opacity: 1; }
+			// border: 1px solid blue;
+		}
+
+	}
 }
 
 
 #template-footer {
+	padding-top: 50px;
 
 	td {
 		font-family: $font-stack;
@@ -222,7 +317,7 @@ a {
 		font-size: 11px;
 		line-height: 150%;
 		text-align:center;
-		padding: 30px 10px 20px;
+		padding: 5px 10px;
 	}
 
 	p {
