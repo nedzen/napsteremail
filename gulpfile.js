@@ -32,7 +32,7 @@ gulp.task('sassInline', function(callback) {
             sass({ outputStyle: 'expanded' })
             .on('error', gutil.log)
         )
-        .pipe(gulp.dest('build/css/'));
+        .pipe(gulp.dest('docs/css/'));
 });
 
 gulp.task('sassEmbedded', function(callback) {
@@ -44,7 +44,7 @@ gulp.task('sassEmbedded', function(callback) {
             sass({ outputStyle: 'compressed' })
             .on('error', gutil.log)
         )
-        .pipe(gulp.dest('build/css/'));
+        .pipe(gulp.dest('docs/css/'));
 });
 
 
@@ -52,7 +52,7 @@ gulp.task('sassEmbedded', function(callback) {
 var inlineCss = require('gulp-inline-css');
 
 gulp.task('inlinecss', ['sassInline', 'nunjucks'], function() {
-    return gulp.src('build/*.html')
+    return gulp.src('docs/*.html')
         .pipe(
             inlineCss({
                 applyStyleTags: false,
@@ -60,7 +60,7 @@ gulp.task('inlinecss', ['sassInline', 'nunjucks'], function() {
             })
             .on('error', gutil.log)
         )
-        .pipe(gulp.dest('build/'))
+        .pipe(gulp.dest('docs/'))
         .pipe(connect.reload());
 });
 
@@ -85,11 +85,11 @@ gulp.task('nunjucks', ['sassEmbedded'], function() {
         )
         .pipe(
             nunjucksRender({
-                path: ['src/templates/', 'build/css/']
+                path: ['src/templates/', 'docs/css/']
             })
             .on('error', gutil.log)
         )
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('docs/'));
 });
 
 
@@ -100,8 +100,8 @@ gulp.task('nunjucks', ['sassEmbedded'], function() {
 var zip = require('gulp-zip');
 
 gulp.task('zip', function () {
-    return gulp.src('build/**')
-        .pipe(zip('build.zip'))
+    return gulp.src('docs/**')
+        .pipe(zip('docs.zip'))
         .pipe(gulp.dest('./'));
 });
 
@@ -115,7 +115,7 @@ var connect = require('gulp-connect');
 gulp.task('connect', function() {
     connect.server({
         port: 8000,
-        root: 'build', // Serve from build directory instead,
+        root: 'docs', // Serve from build directory instead,
         livereload:true
     });
 });
