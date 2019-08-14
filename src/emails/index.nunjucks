@@ -39,10 +39,10 @@
 				</table>
 			</td>
 		</tr> #}
-		<tr><td><div class="euro"><img src="https://nedzen.github.io/napsteremail/images/1euro.png"></div><td></tr>
-		<tr><td><img class="checkmark" src="https://nedzen.github.io/napsteremail/images/ico_check.png">Offline listening</td></tr>
-		<tr><td><img class="checkmark" src="https://nedzen.github.io/napsteremail/images/ico_check.png">Forever free of ads</td></tr>
-		<tr><td><img class="checkmark" src="https://nedzen.github.io/napsteremail/images/ico_check.png">Customizable playlists</td></tr>
+		<tr><td><div class="euro"><img alt="#" src="https://nedzen.github.io/napsteremail/images/1euro.png"></div><td></tr>
+		<tr><td><img alt="#" class="checkmark" src="https://nedzen.github.io/napsteremail/images/ico_check.png">Offline listening</td></tr>
+		<tr><td><img alt="#" class="checkmark" src="https://nedzen.github.io/napsteremail/images/ico_check.png">Forever free of ads</td></tr>
+		<tr><td><img alt="#" class="checkmark" src="https://nedzen.github.io/napsteremail/images/ico_check.png">Customizable playlists</td></tr>
 	</table>
 {% endblock %}
 
