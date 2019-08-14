@@ -127,6 +127,7 @@ a {
   font-weight: normal;
   line-height: 23px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 [class*='text'][class*='-white'] {
@@ -139,7 +140,7 @@ a {
 
 .wrap-container {
   border: 5px solid #6fccfa;
-  padding: 15px;
+  padding: 25px;
 }
 
 /* **********************

@@ -80,6 +80,7 @@ a { color: $brand; }
 	font-weight: normal;
 	line-height: 23px;
 	margin-top: 0;
+	margin-bottom: 0;
 	&[class*='-white'] {
 		color: #FFF;
 	}
@@ -90,7 +91,7 @@ a { color: $brand; }
 
 .wrap-container {
 	border: 5px solid $blue;
-	padding: 15px;
+	padding: 25px;
 }
 
 
