@@ -180,6 +180,28 @@ a {
   max-width: 130px;
 }
 
+#number {
+  font-weight: bold;
+  color: #ff8bc2;
+}
+
+#count {
+  font-size: 100px;
+}
+
+#number-eur,
+#number-month {
+  text-align: left;
+}
+
+#number-eur {
+  font-size: 50px;
+}
+
+#number-month {
+  font-size: 26px;
+}
+
 /* **********************
 
 	Main Content
@@ -192,12 +214,13 @@ a {
 #template-content-header {
   text-align: center;
   position: relative;
-  background-image: url(images/header_img.jpg);
+  background-image: url("https://nedzen.github.io/napsteremail/images/header_img.jpg");
   background-size: cover;
 }
 
 #template-content-header td {
-  background-image: url(images/shape_1.png);
+  background-image: url("https://nedzen.github.io/napsteremail/images/shape_1.png");
+  box-shadow: inset 0px -1px 0px white;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -260,7 +283,7 @@ table#features td img.checkmark {
 }
 
 #content-fourth {
-  background-image: url("images/img_2.png");
+  background-image: url("https://nedzen.github.io/napsteremail/images/img_2.png");
 }
 
 #content-fourth td {
@@ -301,7 +324,7 @@ table#features td img.checkmark {
 }
 
 #img-responsive {
-  padding: 10px 0;
+  padding: 30px 0 10px;
 }
 
 #img-responsive img {

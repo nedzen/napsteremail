@@ -10,7 +10,7 @@
     </tr>
     <tr>
       <td id="brand-header" valign="top" width="100%">
-        <a href="#"><img id="logo" src="images/logo.png"></a>
+        <a href="#"><img id="logo" src="https://nedzen.github.io/napsteremail/images/logo.png"></a>
       </td>
     </tr>
   </table>
@@ -39,6 +39,7 @@
           </div>
         </td>
       </tr>
+
       <tr>
         <td align="center" style="background: #bbedfa" valign="top" width="100%">
           <div class="wrap-container" style="border-top:0; border-bottom:0;">
@@ -51,7 +52,7 @@
             {% block content_third %}{% endblock %}</td>
           </div>
       </tr>
-      <tr><td width="100%"><img src="images/img_1.png"></td></tr>
+      <tr><td width="100%"><img src="https://nedzen.github.io/napsteremail/images/img_1.png"></td></tr>
       <tr id="content-fourth">
         <td align="center" valign="top" width="100%">
           {% block content_fourth %}{% endblock %}
@@ -60,7 +61,7 @@
       <tr id="content-fifth">
         <td align="center" valign="top" width="100%">
           {% block content_fifth %}{% endblock %}
-          <div id="img-responsive"><img src="images/img_3.png"></div>
+          <div id="img-responsive"><img src="https://nedzen.github.io/napsteremail/images/img_3.png"></div>
         </td>
       </tr>
     </table>
@@ -75,9 +76,9 @@
       <td class="pt20" width="100%" align="center">
         <table border="0" cellpadding="0" cellspacing="0" id="socialmedia" align="center">
           <tr>
-            <td><a href="#"><img src="images/ico_fb.png"></a></td>
-            <td><a href="#"><img src="images/ico_tw.png"></a></td>
-            <td><a href="#"><img src="images/ico_insta.png"></a></td>
+            <td><a href="#"><img src="https://nedzen.github.io/napsteremail/images/ico_fb.png"></a></td>
+            <td><a href="#"><img src="https://nedzen.github.io/napsteremail/images/ico_tw.png"></a></td>
+            <td><a href="#"><img src="https://nedzen.github.io/napsteremail/images/ico_insta.png"></a></td>
           </tr>
         </table>
       </td>

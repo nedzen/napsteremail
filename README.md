@@ -1,8 +1,5 @@
 # A Gulp Workflow for Building HTML Emails
 
-
-![Sample Email Template ](screenshot.png)
-
 This is a workflow for building HTML emails using Gulp. It comes with a default MailChimp-supported template.
 
 What it does -

@@ -54,7 +54,6 @@ a { color: $brand; }
 	&[class*='-outline'] {
 		border-color: $pink;
 	}
-
 }
 
 [class*='heading'] {
@@ -133,8 +132,26 @@ a { color: $brand; }
 	max-width: 130px;
 }
 
+#number {
+	font-weight: bold;
+	color: darken($pink, 6%);
+}
 
+#count {
+	font-size: 100px;
+}
 
+#number-eur,
+#number-month {
+	text-align: left;
+}
+
+#number-eur {
+	font-size: 50px;
+}
+#number-month {
+	font-size: 26px;
+}
 
 /* **********************
 
@@ -150,10 +167,12 @@ a { color: $brand; }
 #template-content-header {
 	text-align: center;
 	position: relative;
-	background-image: url(images/header_img.jpg);
+	background-image: url('https://nedzen.github.io/napsteremail/images/header_img.jpg');
 	background-size: cover;
 	td {
-		background-image: url(images/shape_1.png);
+		background-image: url('https://nedzen.github.io/napsteremail/images/shape_1.png');
+		// border-bottom: 1px solid white;
+		box-shadow: inset 0px -1px 0px white;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-position: bottom;
@@ -206,7 +225,7 @@ table#features {
 		// 		padding-bottom: 20px;
 		// 	}
 		// }
-		// background-image:  url(images/header_img.png);
+		// background-image:  url(https://nedzen.github.io/napsteremail/images/header_img.png);
 		background-size: cover;
 		padding: 20px 15px;
 		font-family: $font-stack;
@@ -226,7 +245,7 @@ table#features {
 }
 
 #content-fourth {
-	background-image: url("images/img_2.png");
+	background-image: url("https://nedzen.github.io/napsteremail/images/img_2.png");
 	td {
 		padding: 50px;
 	}
@@ -275,7 +294,7 @@ table#features {
 
 
 #img-responsive {
-	padding: 10px 0;
+	padding: 30px 0 10px;
 	img {
 		max-width: 260px;
 		display: block;
