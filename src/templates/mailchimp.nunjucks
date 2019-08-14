@@ -46,18 +46,21 @@
             {% block content_second %}{% endblock %}</td>
           </div>
       </tr>
+
       <tr>
         <td class="pb20" align="center" valign="top" width="100%">
           <div class="wrap-container" style="border-top:0;">
             {% block content_third %}{% endblock %}</td>
           </div>
       </tr>
-      <tr><td width="100%"><img src="https://nedzen.github.io/napsteremail/images/img_1.png"></td></tr>
+
+      <tr><td valign="bottom" width="100%"><img style="display:block; margin:0; padding:0;" src="https://nedzen.github.io/napsteremail/images/img_1.png"></td></tr>
       <tr id="content-fourth">
         <td align="center" valign="top" width="100%">
           {% block content_fourth %}{% endblock %}
         </td>
       </tr>
+
       <tr id="content-fifth">
         <td align="center" valign="top" width="100%">
           {% block content_fifth %}{% endblock %}

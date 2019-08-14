@@ -166,19 +166,18 @@ a { color: $brand; }
 
 #template-content-header {
 	text-align: center;
-	position: relative;
-	background-image: url('https://nedzen.github.io/napsteremail/images/header_img.jpg');
-	background-size: cover;
+	tr {
+		background-image: url('https://nedzen.github.io/napsteremail/images/header_img.jpg');
+		background-size: cover;
+	}
 	td {
 		background-image: url('https://nedzen.github.io/napsteremail/images/shape_1.png');
-		// border-bottom: 1px solid white;
-		box-shadow: inset 0px -1px 0px white;
+		// box-shadow: inset 0px -2px 0px white;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
-		background-position: bottom;
-		padding: 20px 15px;
+		background-position: 0 100.3%;
+		padding: 50px 25px;
 		font-family: $font-stack;
-		padding: 50px;
 		min-height: 300px;
 	}
 }

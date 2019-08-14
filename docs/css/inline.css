@@ -213,20 +213,20 @@ a {
 
 #template-content-header {
   text-align: center;
-  position: relative;
+}
+
+#template-content-header tr {
   background-image: url("https://nedzen.github.io/napsteremail/images/header_img.jpg");
   background-size: cover;
 }
 
 #template-content-header td {
   background-image: url("https://nedzen.github.io/napsteremail/images/shape_1.png");
-  box-shadow: inset 0px -1px 0px white;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 20px 15px;
+  background-position: 0 100.3%;
+  padding: 50px 25px;
   font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
-  padding: 50px;
   min-height: 300px;
 }
 
