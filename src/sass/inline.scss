@@ -24,10 +24,6 @@ $text-size: 16px;
 // }
 // debugging ------------–------------–------------–
 
-
-.pt20 { padding-top: 20px; }
-.pb20 { padding-bottom: 20px; }
-
 body { background-color: $bg-color; }
 a { color: $brand; }
 
@@ -93,11 +89,12 @@ a { color: $brand; }
 	padding: 25px;
 }
 
+.pt20 { padding-top: 20px; }
+.pb20 { padding-bottom: 20px; }
+
 
 /* **********************
-
 	Preheader
-
  ********************** */
 
 #template-preheader {
@@ -108,6 +105,14 @@ a { color: $brand; }
 		font-size: 13px;
 		text-align: center;
 	}
+}
+
+#brand-header {
+	background-color: $brand;
+}
+
+#logo {
+	max-width: 130px;
 }
 
 #notice-header {
@@ -124,39 +129,10 @@ a { color: $brand; }
 	}
 }
 
-#brand-header {
-	background-color: $brand;
-}
 
-#logo {
-	max-width: 130px;
-}
-
-#number {
-	font-weight: bold;
-	color: darken($pink, 6%);
-}
-
-#count {
-	font-size: 100px;
-}
-
-#number-eur,
-#number-month {
-	text-align: left;
-}
-
-#number-eur {
-	font-size: 50px;
-}
-#number-month {
-	font-size: 26px;
-}
 
 /* **********************
-
 	Main Content
-
  ********************** */
 
 #template-content {
@@ -214,33 +190,11 @@ table#features {
 		margin-right: 20px;
 	}
 	tr {
-		// &:first-child {
-		// 	td {
-		// 		padding-top: 20px;
-		// 	}
-		// }
-		// &:last-child {
-		// 	td {
-		// 		padding-bottom: 20px;
-		// 	}
-		// }
-		// background-image:  url(https://nedzen.github.io/napsteremail/images/header_img.png);
 		background-size: cover;
 		padding: 20px 15px;
 		font-family: $font-stack;
 		padding: 0px
 	}
-}
-
-.email-title {
-	line-height:120%;
-	color: #000;
-	font-size: 24px;
-	font-weight: 700;
-	text-decoration: none;
-}
-.email-subtitle {
-	font-size: 16px;
 }
 
 #content-fourth {
@@ -254,40 +208,9 @@ table#features {
 }
 
 
-/* */
-
-#template-content-content {
-	width: 90%;
-	max-width: 560px;
-	text-align: left;
-	font-family: $font-stack;
-	font-weight: 400;
-	font-size: 16px;
-	line-height:150%;
-	margin: 30px 0;
-
-}
-
 #content-fifth {
 	td {
 		padding: 40px;
-	}
-}
-
-/* */
-
-#template-content-footer {
-
-	tr {
-		background-color: rgb(240, 240, 240);
-	}
-
-	td {
-		padding: 20px 15px;
-		font-family: $font-stack;
-		font-weight: 400;
-		line-height:125%;
-		font-size: 15px;
 	}
 }
 
@@ -302,10 +225,9 @@ table#features {
 }
 
 
+
 /* **********************
-
 	Footer
-
  ********************** */
 
 #socialmedia {
@@ -342,4 +264,28 @@ table#features {
 		display: block;
 		margin-bottom: 15px;
 	}
+}
+
+
+// Misc ------------------------
+// the price-tag number as text instead of image
+#number {
+	font-weight: bold;
+	color: darken($pink, 6%);
+}
+
+#count {
+	font-size: 100px;
+}
+
+#number-eur,
+#number-month {
+	text-align: left;
+}
+
+#number-eur {
+	font-size: 50px;
+}
+#number-month {
+	font-size: 26px;
 }

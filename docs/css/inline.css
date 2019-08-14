@@ -58,14 +58,6 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-.pt20 {
-  padding-top: 20px;
-}
-
-.pb20 {
-  padding-bottom: 20px;
-}
-
 body {
   background-color: #F5F5F5;
 }
@@ -143,10 +135,16 @@ a {
   padding: 25px;
 }
 
+.pt20 {
+  padding-top: 20px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
 /* **********************
-
 	Preheader
-
  ********************** */
 #template-preheader td {
   padding: 13px;
@@ -154,6 +152,14 @@ a {
   color: #606060;
   font-size: 13px;
   text-align: center;
+}
+
+#brand-header {
+  background-color: #1d222d;
+}
+
+#logo {
+  max-width: 130px;
 }
 
 #notice-header {
@@ -172,40 +178,8 @@ a {
   color: #707378;
 }
 
-#brand-header {
-  background-color: #1d222d;
-}
-
-#logo {
-  max-width: 130px;
-}
-
-#number {
-  font-weight: bold;
-  color: #ff8bc2;
-}
-
-#count {
-  font-size: 100px;
-}
-
-#number-eur,
-#number-month {
-  text-align: left;
-}
-
-#number-eur {
-  font-size: 50px;
-}
-
-#number-month {
-  font-size: 26px;
-}
-
 /* **********************
-
 	Main Content
-
  ********************** */
 #template-content {
   background-color: #fff;
@@ -270,18 +244,6 @@ table#features td img.checkmark {
   padding: 0px;
 }
 
-.email-title {
-  line-height: 120%;
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.email-subtitle {
-  font-size: 16px;
-}
-
 #content-fourth {
   background-image: url("https://nedzen.github.io/napsteremail/images/img_2.png");
 }
@@ -294,33 +256,8 @@ table#features td img.checkmark {
   color: #fff;
 }
 
-/* */
-#template-content-content {
-  width: 90%;
-  max-width: 560px;
-  text-align: left;
-  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  margin: 30px 0;
-}
-
 #content-fifth td {
   padding: 40px;
-}
-
-/* */
-#template-content-footer tr {
-  background-color: #f0f0f0;
-}
-
-#template-content-footer td {
-  padding: 20px 15px;
-  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
-  font-weight: 400;
-  line-height: 125%;
-  font-size: 15px;
 }
 
 #img-responsive {
@@ -334,9 +271,7 @@ table#features td img.checkmark {
 }
 
 /* **********************
-
 	Footer
-
  ********************** */
 #socialmedia img {
   width: 30px;
@@ -366,4 +301,26 @@ table#features td img.checkmark {
 #template-footer p {
   display: block;
   margin-bottom: 15px;
+}
+
+#number {
+  font-weight: bold;
+  color: #ff8bc2;
+}
+
+#count {
+  font-size: 100px;
+}
+
+#number-eur,
+#number-month {
+  text-align: left;
+}
+
+#number-eur {
+  font-size: 50px;
+}
+
+#number-month {
+  font-size: 26px;
 }
