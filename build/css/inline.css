@@ -72,21 +72,66 @@ a {
   margin: 20px auto;
 }
 
+.button {
+  padding: 9px 15px;
+  background-color: #bbedfa;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.heading {
+  display: block;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.heading strong {
+  font-weight: bold;
+}
+
+.wrap-container {
+  border: 5px solid #6fccfa;
+  padding: 15px;
+}
+
 /* **********************
 
 	Preheader
 
  ********************** */
 #template-preheader td {
-  padding: 15px 10px;
+  padding: 13px;
   font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
-  font-style: italic;
   color: #606060;
   font-size: 13px;
+  text-align: center;
 }
 
-#template-preheader td:last-child {
-  text-align: right;
+#notice-header {
+  background-color: #f3f3f3;
+  color: #1d222d;
+}
+
+#notice-header p {
+  color: #707378;
+  padding: 5px;
+  margin: 0;
+  line-height: 18px;
+}
+
+#notice-header p a {
+  color: #707378;
+}
+
+#brand-header {
+  background-color: #1d222d;
+}
+
+#logo {
+  max-width: 130px;
 }
 
 /* **********************
@@ -105,9 +150,28 @@ a {
 }
 
 #template-content-header td {
-  background-color: #ffdb3a;
+  background-image: url(images/header_img.png);
+  background-size: cover;
   padding: 20px 15px;
   font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+  padding: 50px;
+}
+
+#template-content-body {
+  text-align: center;
+  position: relative;
+}
+
+#template-content-body .wrap-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#template-content-body td {
+  background-size: cover;
+  padding: 20px 15px;
+  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+  padding: 0px;
 }
 
 .email-title {
@@ -120,6 +184,24 @@ a {
 
 .email-subtitle {
   font-size: 16px;
+}
+
+#content-fourth {
+  background-image: url("images/img_2.png");
+}
+
+#content-fourth td {
+  padding: 50px;
+}
+
+#content-fourth .heading, #content-fourth p {
+  color: #fff;
+}
+
+.euro img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
 }
 
 /* */
@@ -152,6 +234,10 @@ a {
 	Footer
 
  ********************** */
+#socialmedia img {
+  width: 30px;
+}
+
 #template-footer td {
   font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
   color: #606060;

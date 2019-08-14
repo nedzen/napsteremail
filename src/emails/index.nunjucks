@@ -1,62 +1,65 @@
 {% extends "mailchimp.nunjucks" %}
 
-{% block preheader %} 
-A gulp workflow for building HTML emails
-{% endblock %}
-
-{% block email_title %} 
-Gulp Email Workflow
-{% endblock %}
-
-{% block email_subtitle %} 
-Build Better Emails
-{% endblock %}
-
-
-{% block email_content %} 
-<p><a href="https://github.com/ireade/gulp-email-workflow">Gulp Email Workflow</a> is a simple workflow for building HTML emails using Gulp.js. Lorem Khaled Ipsum is a major key to success. Find peace, life is like a water fall, you’ve gotta flow. They don’t want us to win. Wraith talk. Cloth talk. </p>
-
-<h2>Sample Content</h2>
-
-<h3>A code block</h3>
-
-<pre><code class="language-css">.hg { 
-  display: grid; 
-  grid-template-areas: "header header header" 
-		       "navigation main ads" 
-		       "footer footer footer";
-  grid-template-columns: 150px 1fr 150px; 
-  grid-template-rows: 100px 1fr 30px; 
-  min-height: 100vh; 
-}</code></pre>
-
-<h3>An unordered list</h3>
-
-<ul>
-	<li>List item one</li>
-	<li>List item two</li>
-	<li>List item three</li>
-</ul>
-
-<h3>An ordered list</h3>
-
-<ol>
-	<li>List item one</li>
-	<li>List item two</li>
-	<li>List item three</li>
-</ol>
-
-<h3>A block quote</h3>
-
-<blockquote>
-	The first of the month is coming, we have to get money, we have no choice. 
-</blockquote>
-
+{% block preheader %}
+<strong>Your Napster subscription has expired - get 3 months for just 1 €!</strong>
+<p>If you can’t see this message<br>
+<a href="#">Click to the see the web version</a></p>
 {% endblock %}
 
 
 
-{% block email_footer %} 
-Thank you for reading!
+
+{% block email_header %}
+	<h2 class="heading">
+		Keep listening<br>
+		to the music<br>
+		you love,<br>
+		<strong>for just 1 €</strong>
+	</h2>
+	<a class="button" href="#">GET THE OFFER</a>
 {% endblock %}
 
+
+
+{% block content_first %}
+
+	<h2 class="heading">Don’t miss THE latest tracks from <strong>EDITORS</strong></h2>
+	<p>You’ve been part of the Napster family since 2018. We go way back ;)<br>
+		Your subscription has just ended… But because we like having you around, here's a special offer just for you.</p>
+{% endblock %}
+
+{% block content_second %}
+	<ul id="features">
+		<li>Offline listening</li>
+		<li>Forever free of ads</li>
+		<li>Customizable playlists</li>
+	</ul>
+{% endblock %}
+
+{% block content_third %}
+	<a class="button" href="#">GET THE OFFER</a>
+{% endblock %}
+
+{% block content_fourth %}
+	<h2 class="heading">60 MILLIONS SONGS
+	<strong>FROM YOUR FAVOURITE ARTISTS</strong></h2>
+	<p>Unlimited songs on demand from Editors and all your favourite artists for just 1 €</p>
+{% endblock %}
+
+{% block content_fifth %}
+	<h2 class="heading">A PREMIUM OFFER
+	<strong>THAT FOLLOWS YOU AROUND</strong></h2>
+	<p>With Napster, bing your music wherever you go, whether you’re online or offline.
+All your playlists and artists follow you on your smartphone, desktop and speakers.</p>
+{% endblock %}
+
+{% block email_footer %}
+	<p>
+		Bénéficiez d’un abonnement de 3 mois pour 1€ (TVA incluse). À l’expiration de votre abonnement de 3 mois, votre abonnement sera automatiquement reconduit tous les mois au prix de 9,95€ (TVA incluse)/mois, jusqu’à ce que vous le résiliez.
+		<br>Remarque : cette adresse électronique est destinée à des fins de distribution uniquement. Veuillez ne pas répondre à cet e-mail pour toutes questions concernant le service Napster. Si vous avez besoin d'aide, veuillez contacter: https://help.napster.com/home
+		<br>Si vous désirez ne plus recevoir d’informations et d’offres de la part de Napster, cliquez <a href="http://set_user_to_unsubscribed_url">ici.</a><br>
+	</p>
+	<p><a href="http://www.napster.com/privacypolicy" target="_blank">Politique de Confidentialité</a> • <a href="http://www.napster.com/terms" target="_blank">Conditions d'Utilisation</a> • <a href="http://www.napster.com/cookies" target="_blank">Politique en matère de Cookies</a> • <a href="http://www.napster.com/eula" target="_blank">Contrat de Licence Utilisateur Final</a></p>
+	<p><a href="set_user_to_unsubscribed_url" target="_blank">Unsubscribe</a></p>
+	<p>&copy; 2019 Tous droits réservés. Napster et le logo de Napster sont des marques et des marques déposées de Rhapsody International.</p>
+{% endblock %}

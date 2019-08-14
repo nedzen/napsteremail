@@ -1,5 +1,5 @@
 
-@import 
+@import
 	'reset'
 ;
 
@@ -7,9 +7,12 @@ $font-stack: 'Helvetica Neue', Helvetica, 'Arial', sans-serif;
 $theme: rgb(255, 219, 58);
 $bg-color: #F5F5F5;
 
+$brand: #1d222d;
+$paleblue: #bbedfa;
+$blue: #6fccfa;
 
 body {
-	background-color: $bg-color; 
+	background-color: $bg-color;
 }
 
 a {
@@ -21,11 +24,32 @@ a {
 	width: 100%;
 	max-width: 600px;
 	margin: 20px auto;
-	
+
 }
 
+.button {
+	padding: 9px 15px;
+	background-color: $paleblue;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: bold;
+}
 
+.heading {
+	display: block;
+	font-size: 22px;
+	font-weight: normal;
+	margin-top: 0;
+	strong{
+		font-weight: bold;
+	}
+}
 
+.wrap-container {
+	border: 5px solid $blue;
+	padding: 15px;
+}
 /* **********************
 
 	Preheader
@@ -34,21 +58,38 @@ a {
 
 
 
+
 #template-preheader {
-
 	td {
-		padding: 15px 10px;
+		padding: 13px;
 		font-family: $font-stack;
-		font-style: italic;
-		color: #606060; 
+		color: #606060;
 		font-size: 13px;
-	}
-
-	td:last-child {
-		text-align: right;
+		text-align: center;
 	}
 }
 
+#notice-header {
+	background-color: #f3f3f3;
+	color: $brand;
+	p {
+		color: #707378;
+		padding: 5px;
+		margin: 0;
+		line-height: 18px;
+		a {
+			color: #707378;
+		}
+	}
+}
+
+#brand-header {
+	background-color: $brand;
+}
+
+#logo {
+	max-width: 130px;
+}
 
 
 
@@ -67,28 +108,61 @@ a {
 
 
 #template-content-header {
-	text-align: center; 
+	text-align: center;
 	position: relative;
 	td {
-		background-color: $theme;
+		background-image: url(images/header_img.png);
+		background-size: cover;
 		padding: 20px 15px;
 		font-family: $font-stack;
+		padding: 50px
+	}
+}
+
+#template-content-body {
+	text-align: center;
+	position: relative;
+	.wrap-container{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	td {
+		// background-image:  url(images/header_img.png);
+		background-size: cover;
+		padding: 20px 15px;
+		font-family: $font-stack;
+		padding: 0px
 	}
 }
 
 .email-title {
-	line-height:120%; 
-	color: #000; 
-	font-size: 24px; 
-	font-weight: 700; 
+	line-height:120%;
+	color: #000;
+	font-size: 24px;
+	font-weight: 700;
 	text-decoration: none;
 }
 .email-subtitle {
 	font-size: 16px;
 }
 
+#content-fourth {
+	background-image: url("images/img_2.png");
+	td {
+		padding: 50px;
+	}
+	.heading, p {
+		color: #fff;
+	}
+}
 
-
+.euro {
+	img {
+		display: block;
+		width: 200px;
+		margin: 0 auto;
+	}
+}
 
 
 /* */
@@ -99,7 +173,7 @@ a {
 	text-align: left;
 	font-family: $font-stack;
 	font-weight: 400;
-	font-size: 16px; 
+	font-size: 16px;
 	line-height:150%;
 	margin: 30px 0;
 
@@ -109,7 +183,7 @@ a {
 /* */
 
 #template-content-footer {
-	
+
 	tr {
 		background-color: rgb(240, 240, 240);
 	}
@@ -119,7 +193,7 @@ a {
 		font-family: $font-stack;
 		font-weight: 400;
 		line-height:125%;
-		font-size: 15px; 
+		font-size: 15px;
 	}
 }
 
@@ -132,22 +206,27 @@ a {
 
  ********************** */
 
+#socialmedia {
+	td {}
+	img {
+		width: 30px;
+	}
+}
+
+
 #template-footer {
 
 	td {
 		font-family: $font-stack;
-		color: #606060;  
-		font-size: 11px; 
-		line-height: 150%; 
+		color: #606060;
+		font-size: 11px;
+		line-height: 150%;
 		text-align:center;
 		padding: 30px 10px 20px;
 	}
 
-	p {	
+	p {
 		display: block;
 		margin-bottom: 15px;
-	}	
+	}
 }
-
-
-
